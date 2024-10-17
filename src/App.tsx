@@ -1,13 +1,33 @@
-import { App as AntDesignApp, ConfigProvider } from "antd";
+import { App as AntDesignApp, Button, ConfigProvider, Spin } from "antd";
 import { useLocaleContext } from "./Contexts/useLocaleContext/useLocaleContext";
+import { useDataContext } from "./Contexts/useDataContext/useDataContext";
+import { Suspense } from "react";
+import { theme } from "./utils/theme";
 
 function App() {
   const { locale, direction, changeLanguage, localizationFile } =
     useLocaleContext();
+  const { shipmentData, fetchShipmentData, isDataLoading } = useDataContext();
+
   return (
-    <ConfigProvider locale={locale} direction={direction}>
-      <AntDesignApp></AntDesignApp>
-    </ConfigProvider>
+    <Suspense
+      fallback={
+        <Spin className="w-100" size="large" spinning={isDataLoading} />
+      }
+    >
+      <ConfigProvider locale={locale} direction={direction} theme={theme}>
+        <AntDesignApp>
+          <Button
+            onClick={() => {
+              fetchShipmentData("84043113");
+              changeLanguage();
+            }}
+          >
+            {localizationFile.buttons.home}
+          </Button>
+        </AntDesignApp>
+      </ConfigProvider>
+    </Suspense>
   );
 }
 
