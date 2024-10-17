@@ -15,6 +15,7 @@ export type LocaleContextType = {
   currentLanguage: SupportedLanguages;
   changeLanguage: (language?: SupportedLanguages) => void;
 };
+
 export type UseLocaleContext = {
   children: ReactElement;
 };
