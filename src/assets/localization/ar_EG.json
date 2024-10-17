@@ -1,1 +1,76 @@
-{}
+{
+  "buttons": {
+    "login": "تسجيل الدخول",
+    "followShipment": "تتبع شحنتك",
+    "contactSales": "كلم المبيعات",
+    "prices": "الأسعار",
+    "home": "الرئيسية",
+    "switchLanguage": "ENG"
+  },
+  "shipmentTracking": {
+    "headers": {
+      "trackingNumber": "رقم الشحنة",
+      "lastUpdate": "اخر تحديث",
+      "providerName": "اسم التاجر",
+      "estimatedDeliveryTime": "موعد التسليم خلال"
+    },
+    "trackingTimeline": {
+      "TICKET_CREATED": "تم إنشاء الشحنة",
+      "PACKAGE_RECEIVED": "تم إستلام الشحنة من التاجر",
+      "OUT_FOR_DELIVERY": "الشحنة خرجت للتسليم",
+      "DELIVERED": "تم التسليم",
+      "CANCELLED": "تم إلغاء الشحنة",
+      "NOT_YET_SHIPPED": "لم يتم الشحن بعد",
+      "AVAILABLE_FOR_PICKUP": "الشحنة متاحة للاستلام",
+      "WAITING_FOR_CUSTOMER_ACTION": "في انتظار إجراء من العميل",
+      "IN_TRANSIT": "يتم نقل الشحنة",
+      "DELIVERY_FAILED": "فشل تسليم الشحنة",
+      "DELIVERED_TO_SENDER": "تم تسليم الشحنة إلى المرسل"
+    },
+    "deliveryAddress": "عنوان التسليم",
+    "shipmentDetails": "تفاصيل الشحنة",
+    "trackingTable": {
+      "branch": "الفرع",
+      "date": "التاريخ",
+      "time": "الوقت",
+      "details": "تفاصيل"
+    },
+    "issueReport": {
+      "title": "هل يوجد مشكلة في شحنتك؟",
+      "reportButton": "إبلاغ عن مشكلة"
+    },
+    "weekdays": {
+      "Sunday": "الأحد",
+      "Monday": "الإثنين",
+      "Tuesday": "الثلاثاء",
+      "Wednesday": "الأربعاء",
+      "Thursday": "الخميس",
+      "Friday": "الجمعة",
+      "Saturday": "السبت"
+    },
+    "months": {
+      "January": "يناير",
+      "February": "فبراير",
+      "March": "مارس",
+      "April": "أبريل",
+      "May": "مايو",
+      "June": "يونيو",
+      "July": "يوليو",
+      "August": "أغسطس",
+      "September": "سبتمبر",
+      "October": "أكتوبر",
+      "November": "نوفمبر",
+      "December": "ديسمبر"
+    },
+    "hubs": {
+      "Cairo Sorting Facility": "مركز فرز القاهرة",
+      "Beni Suef Hub": "مركز بني سويف",
+      "FM & Reverse Hub": "مركز إدارة المنشآت والمرتجعات",
+      "El-Mansoura Hub": "مركز المنصورة"
+    },
+    "reasons": {
+      "Uncovered Zone": "منطقة غير مغطاة",
+      "Cancellation - The customer refuses to give the shipment to the star": "إلغاء - العميل يرفض تسليم الشحنة للنجم"
+    }
+  }
+}

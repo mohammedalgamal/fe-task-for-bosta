@@ -1,1 +1,76 @@
-{}
+{
+  "buttons": {
+    "login": "Login",
+    "followShipment": "Track your shipment",
+    "contactSales": "Contact Sales",
+    "prices": "Prices",
+    "home": "Home",
+    "switchLanguage": "عربي"
+  },
+  "shipmentTracking": {
+    "headers": {
+      "trackingNumber": "Tracking Number",
+      "lastUpdate": "Last Update",
+      "providerName": "Provider Name",
+      "estimatedDeliveryTime": "Estimated delivery time"
+    },
+    "trackingTimeline": {
+      "TICKET_CREATED": "Shipment Created",
+      "PACKAGE_RECEIVED": "Shipment Received from Provider",
+      "OUT_FOR_DELIVERY": "Shipment Out for Delivery",
+      "DELIVERED": "Shipment Delivered",
+      "CANCELLED": "Shipment Cancelled",
+      "NOT_YET_SHIPPED": "Not Yet Shipped",
+      "AVAILABLE_FOR_PICKUP": "Shipment Available for Pickup",
+      "WAITING_FOR_CUSTOMER_ACTION": "Waiting for Customer's Action",
+      "IN_TRANSIT": "In Transit",
+      "DELIVERY_FAILED": "Delivery Failed",
+      "DELIVERED_TO_SENDER": "Delivered to Sender"
+    },
+    "deliveryAddress": "Delivery Address",
+    "shipmentDetails": "Shipment Details",
+    "trackingTable": {
+      "branch": "Branch",
+      "date": "Date",
+      "time": "Time",
+      "details": "Details"
+    },
+    "issueReport": {
+      "title": "Is there a problem with your shipment?",
+      "reportButton": "Report a problem"
+    },
+    "weekdays": {
+      "Sunday": "Sunday",
+      "Monday": "Monday",
+      "Tuesday": "Tuesday",
+      "Wednesday": "Wednesday",
+      "Thursday": "Thursday",
+      "Friday": "Friday",
+      "Saturday": "Saturday"
+    },
+    "months": {
+      "January": "January",
+      "February": "February",
+      "March": "March",
+      "April": "April",
+      "May": "May",
+      "June": "June",
+      "July": "July",
+      "August": "August",
+      "September": "September",
+      "October": "October",
+      "November": "November",
+      "December": "December"
+    },
+    "hubs": {
+      "Cairo Sorting Facility": "Cairo Sorting Facility",
+      "Beni Suef Hub": "Beni Suef Hub",
+      "FM & Reverse Hub": "FM & Reverse Hub",
+      "El-Mansoura Hub": "El-Mansoura Hub"
+    },
+    "reasons": {
+      "Uncovered Zone": "Uncovered Zone",
+      "Cancellation - The customer refuses to give the shipment to the star": "Cancellation - The customer refuses to give the shipment to the star"
+    }
+  }
+}
