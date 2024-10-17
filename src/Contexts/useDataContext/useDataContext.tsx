@@ -20,6 +20,7 @@ export const DataProvider = ({ children }: UseDataContext): ReactElement => {
       const data: DataContextType["shipmentData"] = await response.json();
       setShipmentData(data);
     } catch (error) {
+      // TODO: add proper error handling if time allows
       console.error("Failed to fetch tracking data:", error);
     } finally {
       setIsDataLoading(false);
