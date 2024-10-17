@@ -1,7 +1,11 @@
-import { POSSIBLE_STATES } from "../constants/states";
+import {
+  TRACKING_TIMELINE_STATES,
+  ADDITIONAL_STATES,
+} from "../constants/states";
 import { Weekdays } from "./date";
 
-type State = (typeof POSSIBLE_STATES)[number];
+type TrackingTimelineState = (typeof TRACKING_TIMELINE_STATES)[number];
+type State = TrackingTimelineState & (typeof ADDITIONAL_STATES)[number];
 
 type TransitEvent = {
   state: State;
