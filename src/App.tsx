@@ -1,6 +1,6 @@
 import { App as AntDesignApp, Button, ConfigProvider, Spin } from "antd";
-import { useLocaleContext } from "./Contexts/useLocaleContext/useLocaleContext";
-import { useDataContext } from "./Contexts/useDataContext/useDataContext";
+import { useLocaleContext } from "./contexts/useLocaleContext/useLocaleContext";
+import { useDataContext } from "./contexts/useDataContext/useDataContext";
 import { Suspense } from "react";
 import { theme } from "./utils/theme";
 
