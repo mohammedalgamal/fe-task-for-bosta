@@ -1,33 +1,23 @@
-import { App as AntDesignApp, Button, ConfigProvider, Spin } from "antd";
+import { App as AntDesignApp, ConfigProvider, Divider, Layout } from "antd";
 import { useLocaleContext } from "./contexts/useLocaleContext/useLocaleContext";
-import { useDataContext } from "./contexts/useDataContext/useDataContext";
-import { Suspense } from "react";
 import { theme } from "./utils/theme";
+import "./styles/global.css";
+import { Header } from "./components/Molecules/header/Header";
+import { LayoutContent } from "./components/Molecules/layoutContent/LayoutContent";
 
 function App() {
-  const { locale, direction, changeLanguage, localizationFile } =
-    useLocaleContext();
-  const { shipmentData, fetchShipmentData, isDataLoading } = useDataContext();
+  const { locale, direction } = useLocaleContext();
 
   return (
-    <Suspense
-      fallback={
-        <Spin className="w-100" size="large" spinning={isDataLoading} />
-      }
-    >
-      <ConfigProvider locale={locale} direction={direction} theme={theme}>
-        <AntDesignApp>
-          <Button
-            onClick={() => {
-              fetchShipmentData("84043113");
-              changeLanguage();
-            }}
-          >
-            {localizationFile.buttons.home}
-          </Button>
-        </AntDesignApp>
-      </ConfigProvider>
-    </Suspense>
+    <ConfigProvider locale={locale} direction={direction} theme={theme}>
+      <AntDesignApp>
+        <Layout>
+          <Header />
+          <Divider style={{ margin: "0" }} />
+          <LayoutContent />
+        </Layout>
+      </AntDesignApp>
+    </ConfigProvider>
   );
 }
 
