@@ -14,6 +14,7 @@
       "providerName": "اسم التاجر",
       "estimatedDeliveryTime": "موعد التسليم خلال"
     },
+    "trackingNumber": "رقم التتبع",
     "trackingTimeline": {
       "TICKET_CREATED": "تم إنشاء الشحنة",
       "PACKAGE_RECEIVED": "تم إستلام الشحنة من التاجر",
@@ -72,5 +73,7 @@
       "Uncovered Zone": "منطقة غير مغطاة",
       "Cancellation - The customer refuses to give the shipment to the star": "إلغاء - العميل يرفض تسليم الشحنة للنجم"
     }
-  }
+  },
+  "PM": "مساءً",
+  "AM": "صباحًا"
 }

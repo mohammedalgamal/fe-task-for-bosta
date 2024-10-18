@@ -14,6 +14,7 @@
       "providerName": "Provider Name",
       "estimatedDeliveryTime": "Estimated delivery time"
     },
+    "trackingNumber": "Tracking Number",
     "trackingTimeline": {
       "TICKET_CREATED": "Shipment Created",
       "PACKAGE_RECEIVED": "Shipment Received from Provider",
@@ -72,5 +73,7 @@
       "Uncovered Zone": "Uncovered Zone",
       "Cancellation - The customer refuses to give the shipment to the star": "Cancellation - The customer refuses to give the shipment to the star"
     }
-  }
+  },
+  "PM": "PM",
+  "AM": "AM"
 }
