@@ -1,17 +1,21 @@
+import { POSSIBLE_HUBS, POSSIBLE_REASONS } from "../constants/common";
 import {
   TRACKING_TIMELINE_STATES,
   ADDITIONAL_STATES,
 } from "../constants/states";
 import { Weekdays } from "./date";
 
-type TrackingTimelineState = (typeof TRACKING_TIMELINE_STATES)[number];
-type State = TrackingTimelineState & (typeof ADDITIONAL_STATES)[number];
+export type TrackingTimelineState = (typeof TRACKING_TIMELINE_STATES)[number];
+export type State = TrackingTimelineState & (typeof ADDITIONAL_STATES)[number];
+
+type Hubs = (typeof POSSIBLE_HUBS)[number];
+type Reasons = (typeof POSSIBLE_REASONS)[number];
 
 type TransitEvent = {
   state: State;
   timestamp: string;
-  hub?: string;
-  reason?: string;
+  hub?: Hubs;
+  reason?: Reasons;
 };
 
 type CurrentStatus = {
