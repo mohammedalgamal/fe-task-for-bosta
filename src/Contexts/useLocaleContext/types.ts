@@ -3,15 +3,14 @@ import { DirectionType } from "antd/lib/config-provider";
 import { Locale } from "antd/lib/locale";
 import { supportedLanguages } from "./config";
 
-import ar from "../../assets/localization/ar_EG.json";
-import en from "../../assets/localization/en_GB.json";
+import { LocalizationFile } from "../../models/localization";
 
 export type SupportedLanguages = (typeof supportedLanguages)[number];
 
 export type LocaleContextType = {
   locale?: Locale;
   direction: DirectionType;
-  localizationFile: typeof ar | typeof en;
+  localizationFile: LocalizationFile;
   currentLanguage: SupportedLanguages;
   changeLanguage: (language?: SupportedLanguages) => void;
 };
