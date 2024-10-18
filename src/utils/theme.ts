@@ -8,4 +8,9 @@ export const theme: ThemeConfig = {
     fontFamily: "Cairo, sans-serif",
     linkDecoration: "none",
   },
+  components: {
+    Layout: {
+      headerBg: "white",
+    },
+  },
 };
